@@ -13,7 +13,7 @@
 		'PopulateMetadata',
 		sub {
 			my $self = shift;
-			push @INC, $self->sourcefile('lib')->canonpath;
+			unshift @INC, $self->sourcefile('lib')->canonpath;
 			for my $app ( @ZydecoApps ) {
 				require_module($app);
 				my $file = 'lib/' . module_notional_filename($app);
