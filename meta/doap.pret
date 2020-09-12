@@ -1,0 +1,19 @@
+# This file contains general metadata about the project.
+
+@prefix : <http://usefulinc.com/ns/doap#>.
+
+`Acme-ZydecoTesting-App1`
+	:programming-language "Perl" ;
+	:shortdesc            "test packaging a Zydeco app";
+	:homepage             <https://metacpan.org/release/Acme-ZydecoTesting-App1>;
+	:download-page        <https://metacpan.org/release/Acme-ZydecoTesting-App1>;
+	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=Acme-ZydecoTesting-App1>;
+	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-acme-zydecotesting-app1> ];
+	:created              2020-09-12;
+	:license              <http://dev.perl.org/licenses/>;
+	:maintainer           cpan:TOBYINK;
+	:developer            cpan:TOBYINK.
+
+<http://dev.perl.org/licenses/>
+	dc:title  "the same terms as the perl 5 programming language system itself".
+
