@@ -6,7 +6,7 @@ package Acme::ZydecoTesting::App1;
 
 BEGIN {
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.002';
+	our $VERSION   = '0.003';
 };
 
 use Zydeco;

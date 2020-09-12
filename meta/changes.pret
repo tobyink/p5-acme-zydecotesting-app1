@@ -10,3 +10,9 @@
 		item "Rename Classes.pl to Classes.zydeco.pm."^^Update;
 		item "Include all Zydeco-generated packages in META.json `provides` section."^^Packaging;
 	].
+
+`Acme-ZydecoTesting-App1 0.003 cpan:TOBYINK`
+	issued  2020-09-12;
+	changeset [
+		item "Fix version numbers in META.json `provides` section."^^Packaging;
+	].
