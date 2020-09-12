@@ -14,14 +14,14 @@
 		sub {
 			my $self = shift;
 			push @INC, $self->sourcefile('lib')->canonpath;
-			print join("|", @INC), "\n\n";
 			for my $app ( @ZydecoApps ) {
 				require_module($app);
+				my $file = 'lib/' . module_notional_filename($app);
 				my $pkgs = do { no strict 'refs'; \%{"$app\::PACKAGES"} };
 				for my $pkg ( sort keys %$pkgs ) {
 					$self->metadata->{'provides'}{$pkg} ||= {
 						'version'  => $pkg->VERSION,
-						'file'     => module_notional_filename($app),
+						'file'     => $file,
 					};
 					$self->metadata->{'provides'}{$pkg}{'x_type'} = $pkgs->{$pkg},
 				}
