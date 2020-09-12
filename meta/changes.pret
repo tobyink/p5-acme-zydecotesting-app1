@@ -4,3 +4,9 @@
 	issued  2020-09-12;
 	label   "Initial release".
 
+`Acme-ZydecoTesting-App1 0.002 cpan:TOBYINK`
+	issued  2020-09-12;
+	changeset [
+		item "Rename Classes.pl to Classes.zydeco.pm."^^Update;
+		item "Include all Zydeco-generated packages in META.json `provides` section."^^Packaging;
+	].
