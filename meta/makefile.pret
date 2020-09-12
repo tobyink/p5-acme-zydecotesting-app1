@@ -4,7 +4,7 @@
 
 `Acme-ZydecoTesting-App1`
 	:runtime-requirement    [ :on "perl 5.014"^^:CpanId ];
-	:runtime-requirement    [ :on "Zydeco 0.602"^^:CpanId ];
+	:runtime-requirement    [ :on "Zydeco 0.603"^^:CpanId ];
 	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
 	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
 	.
